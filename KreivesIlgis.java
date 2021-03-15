@@ -37,8 +37,6 @@ public class KreivesIlgis {
 		
 		Double atstumas = 0.0;
 		
-
-		
 		while ( i < xs.length ) {
 			
 			Double x = Double.parseDouble ( xs [ i ] );
