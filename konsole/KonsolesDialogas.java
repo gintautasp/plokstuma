@@ -10,7 +10,7 @@
 	*/
 	public class KonsolesDialogas  {
 		
-		public BufferedReader reader;												// skaitymo iš failo tarpinis objektas.
+		public BufferedReader reader;												// skaitymo iš konsolės tarpinis objektas.
 		
 		/**
 		* konstruktorius be parametrų, sukuria skaitymo iš failo tarpinį objektą
@@ -21,7 +21,7 @@
 		}
 		
 		/**
-		* iš konsolės įvedama teksto eilutė, prieš tai išvedant priminimą ir reikšmę kuri bus gražinama pagal nultylėjimą, paspaudus tik Enter.
+		* iš konsolės įvedama teksto eilutė, prieš tai išvedant priminimą ir reikšmę kuri bus gražinama pagal nutylėjimą, paspaudus tik Enter.
 		*@param String priminimas
 		*@param String nutylint
 		*@return String

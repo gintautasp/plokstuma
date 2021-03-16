@@ -12,9 +12,7 @@ import konsole.*;
 public class KreivesIlgisz {
 	
 	public static void main(String[] args)  throws IOException  {
-		
-																							// programos pasisveikinimas							
-		
+																								// programos pasisveikinimas							
 		System.out.println( "Labas Java pasauli .." );
 		System.out.println( "Skaiciuosim kreives ilgi:" );
 																							//   organizuojamas konsolės dialogas, ..

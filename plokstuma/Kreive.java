@@ -2,24 +2,46 @@
 	package plokstuma;
 	
 	import java.lang.Math;	
-
+	
+	/**
+	* klasė kreivės taškų masyvo saugojimui ir veiksmų su kreive atlikimui
+	*/
 	public class Kreive {
 	
-		public Taskas[] taskai;
-		public int kiek_tasku;
+		public Taskas[] taskai;  														// kreivės taškų masyvas
+		public int kiek_tasku;														// kreivės taškų kiekis
 		
+		/**
+		* konstruktorius, be parametrų
+		*/		
+		public Kreive() {
+			
+		}
+		
+		/**
+		* konstruktorius, sukuria tuščia, taškų masyva, pagal nurodytą elementų skaičių
+		*@param int max_tasku
+		*/
 		public Kreive ( int max_tasku ) {
 			
 			taskai = new Taskas [ max_tasku ];
 			kiek_tasku = 0;
 		}
 		
+		/**
+		* papildo krevės taškų masyvą dar viena reikšme
+		*@param Taskas taskas
+		*/
 		public void pridetiTaska ( Taskas taskas ) {
 			
 			taskai [ kiek_tasku ] = taskas;
 			kiek_tasku++;
 		}
 		
+		/**
+		* suskaičiuoja kreivės ilgį
+		*@return double
+		*/
 		public double ilgis() {
 			
 			int i = 0;
@@ -36,6 +58,10 @@
 			return atstumas;
 		}
 		
+		/**
+		* perrašomas standartinis java Object klasės metodas toString, skirtas parodyti kreivę, taškais pateikiant ASC II simboliais, lentelėje
+		*@return String
+		*/
 		public String toString() {
 			
 			String lentele = 
